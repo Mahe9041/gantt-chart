@@ -1,3 +1,5 @@
+This is a project made by complete vibe coding having zero knowledge on canvs etc..
+
 # Angular Gantt Chart Component
 A customizable Gantt chart component for Angular applications
 
