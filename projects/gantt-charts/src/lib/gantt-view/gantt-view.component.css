@@ -1,0 +1,78 @@
+/* gantt-chart.component.scss */
+.gantt-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.gantt-tooltip {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 12px;
+    border-radius: 4px;
+    z-index: 1000;
+    max-width: 300px;
+    pointer-events: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+    &-title {
+        font-weight: bold;
+        font-size: 1.1em;
+        margin-bottom: 8px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 4px;
+    }
+
+    &-row {
+        margin: 4px 0;
+
+        span {
+            font-weight: bold;
+            color: #64b5f6;
+            margin-right: 6px;
+        }
+    }
+
+    &-progress {
+        height: 6px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 3px;
+        margin-top: 8px;
+        overflow: hidden;
+
+        &-bar {
+            height: 100%;
+            background: #4caf50;
+        }
+    }
+}
+
+.gantt-relationship-tooltip {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 12px;
+    border-radius: 4px;
+    z-index: 1000;
+    max-width: 250px;
+    pointer-events: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-left: 3px solid #2196f3;
+
+    &-title {
+        font-weight: bold;
+        font-size: 1.1em;
+        margin-bottom: 8px;
+        color: #64b5f6;
+    }
+
+    &-row {
+        margin: 4px 0;
+
+        span {
+            font-weight: bold;
+            color: #81c784;
+            margin-right: 6px;
+        }
+    }
+}
